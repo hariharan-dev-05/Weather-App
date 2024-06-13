@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="shortcut icon" href="./Asserts/favicon.ico" id="favicon" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <p class="title">Weather App</p>
+            <div class="search-div">
+                <input type="text" name="location" id="search-field" placeholder="Enter City">
+                <button id="submit-btn" type="submit">Search</button>
+            </div>
+            <div class="result-div">
+                <div id="img-div">
+                    <img src="" id="weather-img" alt="">
+                </div>
+                <p id="temp"></p>
+                <p id="wind-speed"></p>
+                <div class="others">
+                    <p id="description"></p>
+                    <p id="humidity"></p>
+                </div>
+                <p id="err-msg"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">
+            <p class="copy"><span id="year"></span> All rights reserved.</p>
+        </div>
+        <div class="developer">
+            <p class="dev">Developed by <span id="name"><a href="https://linkedin.com/in/hariharan-c">Hariharan C</a></span></p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Acme";
+    font-size: 18px;
+}
+
+.container {
+    background: #232d65;
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app {
+    height: auto;
+    width: 400px;
+    background: #3948a1;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0 0 0;
+}
+
+.search-div {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#search-field {
+    height: 40px;
+    outline: none;
+    padding: 5px 0 5px 10px;
+    flex-basis: 70%;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4);
+}
+
+#submit-btn {
+    flex-basis: 30%;
+    border-radius: 4px;
+    border: none;
+    background: #337435;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4);
+    padding: 7px 15px;
+}
+
+.result-div {
+    padding: 10px;
+    height: inherit;
+}
+
+#img-div {
+    height: 150px;
+    width: 95%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#weather-img {
+    height: 150px;
+}
+
+#temp,
+#wind-speed,
+#err-msg {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.others {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+.footer {
+    width: 100svw;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.developer {
+    text-align: right;
+}
+
+#name a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+    .weather-app {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .weather-app {
+        width: 320px;
+    }
+
+    .search-div {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #search-field,
+    #submit-btn {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    #img-div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #weather-img {
+        height: 100px;
+    }
+
+    .others {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .developer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .weather-app {
+        width: 300px;
+    }
+
+    .search-div {
+        gap: 5px;
+    }
+    
+    #search-field {
+        flex-basis: 60%;
+    }
+    
+    #submit-btn {
+        flex-basis: 40%;
+    }
+}
