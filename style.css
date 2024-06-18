@@ -131,15 +131,22 @@
     }
 
     .search-div {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         padding: 10px;
+    }
+
+    #search-field {
+        flex-basis: 70%;
+    }
+
+    #submit-btn {
+        flex-basis: 30%;
     }
 
     #search-field,
     #submit-btn {
         width: 100%;
-        flex-basis: auto;
     }
 
     #img-div {
@@ -157,14 +164,12 @@
         gap: 10px;
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .developer {
+        text-align: right;
     }
 
-    .developer {
-        text-align: center;
+    #name a {
+        display: block;
     }
 }
 
@@ -183,5 +188,13 @@
     
     #submit-btn {
         flex-basis: 40%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    #name a {
+        display: unset;
     }
 }
